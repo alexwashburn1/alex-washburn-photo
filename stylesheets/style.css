@@ -1,0 +1,426 @@
+/* load downloaded font */
+@font-face {
+    font-family: 'HoboRegular';
+    src: url('../fonts/Hobo_Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url('../fonts/Helvetica.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+body {
+    background-color: white;
+    background-size: cover; /* Ensures the image covers the entire page */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Keeps the background fixed while scrolling */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+body.homepage {
+    background-color: #C7C8BA;
+}
+
+h1 {
+    font-size: 35px;
+}
+
+p {
+    font-family: 'Helvetica', monospace;
+    font-size: 23px;
+    font-weight: medium;
+    color: black;
+}
+
+.my-name-title {
+        position: fixed;   /* Or use absolute if it's inside a relatively positioned container */
+        top: 30px;         /* Adjust as needed */
+        left: 30px;        /* Adjust as needed */
+        font-size: 50px;   /* Customize font size */
+        font-weight: bold;
+        font-family: 'HoboRegular', monospace; /* Or your preferred font */
+        color: #2E327F;      /* Customize color */
+        margin: 0;
+        padding: 0;
+}
+
+.my-name {
+        position: fixed;   /* Or use absolute if it's inside a relatively positioned container */
+        top: 30px;         /* Adjust as needed */
+        left: 30px;        /* Adjust as needed */
+        font-size: 50px;   /* Customize font size */
+        font-family: 'HoboRegular', monospace; /* Or your preferred font */
+        margin: 0; 
+
+        text-decoration: none;     /* Removes underline */
+        color: #2E327F;            /* Your original blue color */
+        font-weight: bold;         /* Optional: makes it stand out */
+        cursor: pointer;
+         
+        background-color: rgba(255, 255, 255, 0.6);  
+        border-radius: 5px;
+        padding: 5px 10px;
+        
+ 
+}
+
+.my-name a:link,
+.my-name a:visited {
+  color: #2E327F;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.my-name a:hover {
+  color: #6F73E8;
+  text-decoration: none;
+}
+
+.my-name-title a {
+    all: unset;
+    cursor: pointer;
+  }
+  
+/* Style specific to index.html using the ID */
+#home-name {
+  position: absolute;
+  top: 63px;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Perfectly centers it */
+  padding: 20px 40px;
+  text-align: center;
+  z-index: 1000;
+}
+
+
+.header-link {
+    font-size: 28px;
+    font-family: 'Helvetica', monospace;
+    text-decoration: none;
+    color: #2E327F;
+    cursor: pointer;
+}
+
+.header-link:hover {
+  text-decoration: underline;
+}
+
+.example-italic-style {
+    font-size: 25px;
+    font-style: italic;
+ }
+
+.order-info {
+    /* learned how to position things in the top corner of a page here: https://www.shecodes.io/athena/7710-how-to-position-a-fixed-element-in-the-top-right-corner#:~:text=in%203.93%20seconds-,To%20position%20a%20fixed%20element%20in%20the%20top%20right%20corner,properties%20to%20adjust%20its%20position.&text=In%20this%20example%2C%20we've,of%20%22fixed%2Delement%22. */
+    position: fixed;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    top: 5px;
+}
+
+.description {
+    font-size: 30px;
+    font-family: 'Courier New', monospace;
+    font-weight: 300;
+    color: black;
+}
+
+.subdescription {
+    font-size: 23px;
+    font-family: 'Courier New', monospace;
+    font-weight: 300
+}
+
+.example-box {
+    border: 5px solid black;
+    border-radius: 15px;
+    margin: 5px; 
+    padding: 2px;
+}
+
+.container-head {
+    /* width and height look good by default, no need to manually set (I experimented with it) */
+    background-color: rgb(23, 15, 76); 
+    border-radius: 20px;
+    padding: 20px; 
+}
+
+.container-philosophy {
+    /* width and height look good by default, no need to manually set (I experimented with it) */
+    background-color: lightblue; 
+    overflow-wrap: break-word;
+    border-radius: 20px;
+    padding: 5px; 
+}
+
+.image {
+    padding: 20px; 
+    /* (1) top, (2) right, (3) bottom, (4) left */
+    margin: 10px 10px 50px 10px;
+    width: 60%;
+}
+
+.grid-image {
+    /* (1) top, (2) right, (3) bottom, (4) left */
+    margin: 10px;
+    width: 70%;
+}
+
+.box {
+    /* width and height look good by default, no need to manually set (I experimented with it) */
+    margin: 8px; 
+    padding: 13px;
+    background-color: lightblue; 
+}
+
+.flex-box {
+    height: 150px; 
+    width: 320px;
+    margin: 50px; 
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    font-family: 'Courier New', monospace;
+    background-color: lightblue;
+}
+
+.container-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.container-flex-header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    gap: 30px; /* space between About and Contact */
+    padding: 20px 20px;
+    background-color: transparent; /* removes gray background */
+}
+
+.image-box {
+    display: flex;
+    justify-content: center;
+}
+
+.container-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.subvalue {
+    font-size: 18px;
+}
+
+.photo-description {
+    font-size: 30px;
+    font-family: 'Courier New', monospace;
+    font-weight: 600;
+    color: black;
+}
+
+.space-top {
+    /* margin-top to create blank space above (one simple method I used) */
+    margin-top: 50px; 
+}
+
+.space-bottom {
+    /* margin-bottom to create blank space above (one simple method I used) */
+    margin-bottom: 16px; 
+}
+
+.side-menu {
+    position: fixed;
+    top: 100px; /* adjust as needed */
+    left: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .side-menu a {
+    text-decoration: none;
+    color: #2E327F;
+    font-family: 'Helvetica', monospace;
+    font-size: 24px;
+  }
+  
+  .side-menu a:hover {
+    text-decoration: underline; /* optional, for hover effect */
+  }
+
+
+
+ /* Slider container */
+.slider {
+    position: relative;
+    width: 58%;                   /* Image width */
+    margin: 0 auto;               /* Centers the slider */
+    padding-top: 120px;            /* Adds space above the slider */
+  }
+  
+  /* Each slide (image) */
+  .slide {
+    width: 100%;                  /* Makes the image take the full width of the slider container */
+    height: auto;                 /* Maintains the aspect ratio */
+    display: none;                /* Hides the images by default */
+    margin-top: 5px;             /* Moves the image slightly lower (adjust as needed) */
+  }
+  
+  /* Active slide (the one being shown) */
+  .slide.active {
+    display: block;
+  }
+  
+  /* Arrows (buttons) */
+  .prev, .next {
+    position: absolute;
+    top: 60%;                      /* Vertically centers the arrows */
+    transform: translateY(-50%);   /* Adjusts for proper centering */
+    background: none;
+    border: none;
+    color: black;                  /* black arrows */
+    font-size: 30px;               /* Adjust size of arrows */
+    cursor: pointer;
+    padding: 10px;
+    z-index: 10;                   /* Ensures the arrows are on top of the images */
+  }
+  
+  .prev {
+    left: -40px;                   /* Move the left arrow outside of the image */
+  }
+  
+  .next {
+    right: -40px;                  /* Move the right arrow outside of the image */
+  }
+
+
+  /* FOR SURFING IMAGES */
+  .photo-gallery {
+    margin-top: 100px; /* Adds space from the top of the page */
+    text-align: center;
+  }
+
+  .image-box-surfing {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;  /* Add space between images */
+    flex-wrap: wrap;
+  }
+
+
+  .profile-pic {
+    max-width: 800px;
+    margin-top: 150px;
+  }
+
+
+  /* SURFING PAGE CONTENT */
+  @media (max-width: 700px) {
+    .image-grid-surfing {
+      grid-template-columns: 1fr;
+    }
+  } 
+
+  @media (max-width: 700px) {
+    .image-gallery-wrapper {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+ .image-gallery-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 30px; /* Horizontal gap between the two stacks */
+  margin-top: 80px;
+}
+
+.image-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 30px; /* Vertical gap between images in each stack */
+}
+
+.image-surfing {
+  max-width: 700px; /* Maximum width of the image */
+  height: auto;     /* Keep the aspect ratio */
+  margin: 100px 0;
+  display: block;       /* removes inline spacing */
+  margin: 0;            /* removes any margin */
+  padding: 0; 
+  width: 100%; /* Makes each image scale to stack width */
+  cursor: pointer; 
+}
+
+  /* OCEAN PAGE CONTENT */
+  .image-ocean {
+    max-width: 700px; /* Maximum width of the image */
+    height: auto;     /* Keep the aspect ratio */
+    margin: 100px 0;
+    display: block;       /* removes inline spacing */
+    margin: 0;            /* removes any margin */
+    padding: 0; 
+    width: 100%; /* Makes each image scale to stack width */
+    cursor: pointer; 
+  }
+
+  
+
+  /* PORTRAIT PAGE CONTENT */
+  .image-portrait {
+    max-width: 700px; /* Maximum width of the image */
+    height: auto;     /* Keep the aspect ratio */
+    margin: 10px 0;
+  }
+
+  .image-portrait {
+    width: 100%;      /* Fill the column's width */
+    margin-bottom: 30px; /* Vertical gap between images */
+    display: block;
+  }
+
+
+
+  /* FOR IMAGE ENLARGEMENT WHEN CLICKED */
+  /* Overlay container */
+.image-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8); /* semi-transparent black */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Hide the overlay by default */
+.image-overlay.hidden {
+  display: none;
+}
+
+/* Enlarged image */
+.image-overlay img {
+  max-width: 90%;
+  max-height: 90%;
+  
+  
+}
