@@ -13,8 +13,6 @@
     font-style: normal;
 }
 
-
-
 body {
     background-color: white;
     background-size: cover; /* Ensures the image covers the entire page */
@@ -245,7 +243,7 @@ p {
 
 .side-menu {
     position: fixed;
-    top: 100px; /* adjust as needed */
+    top: 120px; /* adjust as needed */
     left: 30px;
     display: flex;
     flex-direction: column;
@@ -332,19 +330,91 @@ p {
   }
 
 
-  /* SURFING PAGE CONTENT */
-  @media (max-width: 700px) {
+  /* MAKE THE WEBSITE MOBILE-FRIENDLY, these styles will apply to mobile devices */
+  @media (max-width: 768px) {
     .image-grid-surfing {
       grid-template-columns: 1fr;
     }
-  } 
 
-  @media (max-width: 700px) {
     .image-gallery-wrapper {
       flex-direction: column;
       align-items: center;
     }
-  }
+
+    #home-name {
+      position: static;
+      transform: none;
+      text-align: center;
+      font-size: 32px;
+      padding: 10px 20px;
+    }
+
+    .side-menu {
+      position: static;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      padding: 10px 0;
+    }
+
+    .side-menu a {
+      font-size: 18px;
+    }
+
+    .container-flex-header {
+      position: static;
+      justify-content: center;
+      padding: 10px 0;
+    }
+
+    .header-link {
+      font-size: 20px;
+    }
+
+    .home-content-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .slider {
+      width: 100%;
+      padding-top: 20px;
+    }
+
+    .prev, .next {
+      font-size: 24px;
+      top: 50%;
+      left: 10px;
+      right: 10px;
+    }
+
+    .image-surfing,
+    .image-ocean,
+    .image-portrait {
+      max-width: 100%;
+      margin: 10px 0;
+      padding: 0;
+    }
+
+    p {
+      font-size: 18px;
+    }
+
+    .my-name-title {
+      font-size: 32px;
+    }
+
+    .photo-description {
+      font-size: 20px;
+    }
+
+    .subdescription {
+      font-size: 16px;
+    }
+  } 
+
 
  .image-gallery-wrapper {
   display: flex;
