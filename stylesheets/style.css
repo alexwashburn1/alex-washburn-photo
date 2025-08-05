@@ -102,7 +102,7 @@ p {
 
 
 .header-link {
-    font-size: 28px;
+    font-size: clamp(12px, 2vw, 24px);
     font-family: 'Helvetica', monospace;
     text-decoration: none;
     color: #2E327F;
@@ -201,6 +201,7 @@ p {
 }
 
 .container-flex-header {
+    z-index: 1100; /* or higher than other fixed elements */
     position: fixed;
     top: 0;
     right: 0;
@@ -241,6 +242,17 @@ p {
     margin-bottom: 16px; 
 }
 
+/* add a wrapper for the home page content */
+.home-content-wrapper {
+  display: flex;
+  justify-content: center;  /* horizontal center */
+  align-items: center;      /* vertical center */
+  height: 100vh;            /* full viewport height */
+  padding-left: 0px;      /* leave space for fixed side menu (adjust as needed) */
+  box-sizing: border-box;
+  position: relative;
+}
+
 .side-menu {
     position: fixed;
     top: 120px; /* adjust as needed */
@@ -254,7 +266,7 @@ p {
     text-decoration: none;
     color: #2E327F;
     font-family: 'Helvetica', monospace;
-    font-size: 24px;
+    font-size: clamp(12px, 2vw, 24px);
   }
   
   .side-menu a:hover {
@@ -264,11 +276,12 @@ p {
 
 
  /* Slider container */
-.slider {
+
+  .slider {
     position: relative;
-    width: 58%;                   /* Image width */
-    margin: 0 auto;               /* Centers the slider */
-    padding-top: 120px;            /* Adds space above the slider */
+    width: 60%;           /* smaller width so it doesn't take up the whole screen */
+    margin: 0; /* centers it horizontally, pushes it down vertically */
+    box-sizing: border-box;
   }
   
   /* Each slide (image) */
@@ -287,23 +300,21 @@ p {
   /* Arrows (buttons) */
   .prev, .next {
     position: absolute;
-    top: 60%;                      /* Vertically centers the arrows */
-    transform: translateY(-50%);   /* Adjusts for proper centering */
+    top: 50%;                /* center vertically */
+    transform: translateY(-50%);
     background: none;
     border: none;
-    color: black;                  /* black arrows */
-    font-size: 30px;               /* Adjust size of arrows */
+    color: black;
+    font-size: 30px;
     cursor: pointer;
     padding: 10px;
-    z-index: 10;                   /* Ensures the arrows are on top of the images */
+    z-index: 10;
   }
-  
   .prev {
-    left: -40px;                   /* Move the left arrow outside of the image */
+    left: -40px;             /* position left arrow outside image */
   }
-  
   .next {
-    right: -40px;                  /* Move the right arrow outside of the image */
+    right: -40px;            /* position right arrow outside image */
   }
 
 
@@ -341,82 +352,59 @@ p {
       align-items: center;
     }
 
+      /* Keep name centered */
     #home-name {
-      position: static;
-      transform: none;
-      text-align: center;
-      font-size: 32px;
+      position: absolute;
+      top: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 28px;
       padding: 10px 20px;
+      text-align: center;
+      z-index: 1000;
     }
 
-    .side-menu {
-      position: static;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 15px;
-      padding: 10px 0;
-    }
-
-    .side-menu a {
-      font-size: 18px;
-    }
-
+    /* INFO button stays top right */
     .container-flex-header {
-      position: static;
-      justify-content: center;
-      padding: 10px 0;
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      background-color: transparent;
+      padding: 0;
     }
 
-    .header-link {
-      font-size: 20px;
-    }
-
-    .home-content-wrapper {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .slider {
+    /* Adjust slider size and keep arrows visible */
+   
+    .slide {
       width: 100%;
-      padding-top: 20px;
+      height: auto;
+      display: none;
+    }
+
+    .slide.active {
+      display: block;
     }
 
     .prev, .next {
       font-size: 24px;
       top: 50%;
-      left: 10px;
-      right: 10px;
+      transform: translateY(-50%);
+      padding: 5px;
+      color: black;
+      z-index: 10;
     }
 
-    .image-surfing,
-    .image-ocean,
-    .image-portrait {
-      max-width: 100%;
-      margin: 10px 0;
-      padding: 0;
+    .prev {
+      left: 5px;
     }
 
-    p {
-      font-size: 18px;
-    }
-
-    .my-name-title {
-      font-size: 32px;
-    }
-
-    .photo-description {
-      font-size: 20px;
-    }
-
-    .subdescription {
-      font-size: 16px;
+    .next {
+      right: 5px;
     }
   } 
 
 
- .image-gallery-wrapper {
+.image-gallery-wrapper {
   display: flex;
   justify-content: center;
   gap: 30px; /* Horizontal gap between the two stacks */
