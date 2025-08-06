@@ -41,10 +41,11 @@ p {
 }
 
 .my-name-title {
+        white-space: nowrap;
         position: fixed;   /* Or use absolute if it's inside a relatively positioned container */
         top: 30px;         /* Adjust as needed */
         left: 30px;        /* Adjust as needed */
-        font-size: 50px;   /* Customize font size */
+        font-size: clamp(35px, 5vw, 50px);;   /* Customize font size */
         font-weight: bold;
         font-family: 'HoboRegular', monospace; /* Or your preferred font */
         color: #2E327F;      /* Customize color */
@@ -53,10 +54,11 @@ p {
 }
 
 .my-name {
+        white-space: nowrap;
         position: fixed;   /* Or use absolute if it's inside a relatively positioned container */
         top: 30px;         /* Adjust as needed */
         left: 30px;        /* Adjust as needed */
-        font-size: 50px;   /* Customize font size */
+        font-size: clamp(35px, 5vw, 50px);   /* Customize font size */
         font-family: 'HoboRegular', monospace; /* Or your preferred font */
         margin: 0; 
 
@@ -255,11 +257,12 @@ p {
 
 .side-menu {
     position: fixed;
-    top: 120px; /* adjust as needed */
+    top: 170px; /* adjust as needed */
     left: 30px;
     display: flex;
     flex-direction: column;
     gap: 10px;
+    z-index: 1500;
   }
   
   .side-menu a {
@@ -279,7 +282,7 @@ p {
 
   .slider {
     position: relative;
-    width: 60%;           /* smaller width so it doesn't take up the whole screen */
+    width: 65%;           /* smaller width so it doesn't take up the whole screen */
     margin: 0; /* centers it horizontally, pushes it down vertically */
     box-sizing: border-box;
   }
