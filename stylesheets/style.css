@@ -445,13 +445,13 @@ p {
 
   /* OCEAN PAGE CONTENT */
   .image-ocean {
-    max-width: 700px; /* Maximum width of the image */
-    height: auto;     /* Keep the aspect ratio */
+    max-width: 700px; 
+    height: auto;     
     margin: 100px 0;
-    display: block;       /* removes inline spacing */
-    margin: 0;            /* removes any margin */
+    display: block;       
+    margin: 0;            
     padding: 0; 
-    width: 100%; /* Makes each image scale to stack width */
+    width: 100%; 
     cursor: pointer; 
   }
 
@@ -459,14 +459,14 @@ p {
 
   /* PORTRAIT PAGE CONTENT */
   .image-portrait {
-    max-width: 700px; /* Maximum width of the image */
-    height: auto;     /* Keep the aspect ratio */
+    max-width: 700px; 
+    height: auto;    
     margin: 10px 0;
   }
 
   .image-portrait {
-    width: 100%;      /* Fill the column's width */
-    margin-bottom: 30px; /* Vertical gap between images */
+    width: 100%;      
+    margin-bottom: 30px; 
     display: block;
   }
 
@@ -480,7 +480,7 @@ p {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.8); /* semi-transparent black */
+  background-color: rgba(0, 0, 0, 0.8); 
   display: flex;
   justify-content: center;
   align-items: center;
