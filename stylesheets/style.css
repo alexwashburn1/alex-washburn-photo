@@ -416,6 +416,16 @@ p {
     .next {
       right: 5px;
     }
+
+    /* Top nav bar links */
+    .side-menu a {
+      font-size: 16px; /* adjust as needed */
+    }
+
+    /* Info button text */
+    .container-flex-header .header-link {
+      font-size: 16px; /* adjust as needed */
+    }
   } 
 
 
