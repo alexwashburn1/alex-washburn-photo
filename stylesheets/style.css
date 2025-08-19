@@ -369,7 +369,7 @@ p {
       flex-wrap: wrap;
 
       gap: clamp(14px, 3vw, 20px);   /* scales spacing between words */
-      margin: clamp(90px, 15vw, 110px) clamp(10px, 4vw, 20px) 10px clamp(10px, 4vw, 20px); 
+      margin: clamp(100px, 15vw, 110px) clamp(10px, 4vw, 20px) 10px clamp(10px, 4vw, 20px); 
 
       /* OLD STUFF IF YOU WANT TO CHANGE IT BACK: */
       /* gap: 18px;
