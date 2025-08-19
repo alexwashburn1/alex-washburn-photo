@@ -427,7 +427,7 @@ p {
 
     /* Top nav bar links */
     .side-menu a {
-      font-size: clamp(10px, 2.5vw, 14px);  /* scales font size smoothly */
+      font-size: clamp(11px, 2.5vw, 15px);  /* scales font size smoothly */
       padding: 0 clamp(2px, 1vw, 6px);      /* scales horizontal padding */
       /* OLD STUFF IF YOU WANT TO CHANGE IT BACK: */
       /* 
