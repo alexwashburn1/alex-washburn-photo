@@ -285,6 +285,7 @@ p {
     width: 68%;           /* smaller width so it doesn't take up the whole screen */
     margin: 0; /* centers it horizontally, pushes it down vertically */
     box-sizing: border-box;
+    margin-top:84px;
   }
   
   /* Each slide (image) */
