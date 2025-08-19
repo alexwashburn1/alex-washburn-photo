@@ -423,11 +423,11 @@ p {
     }
 
     .prev {
-      left: -8%;;
+      left: -10%;
     }
 
     .next {
-      right: -8%;;
+      right: -10%;
     }
 
     /* Top nav bar links */
