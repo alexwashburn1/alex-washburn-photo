@@ -398,6 +398,10 @@ p {
     }
 
     /* Adjust slider size and keep arrows visible */
+
+    .slider {
+      margin-top: 15px;
+    }
    
     .slide {
       width: 100%;
