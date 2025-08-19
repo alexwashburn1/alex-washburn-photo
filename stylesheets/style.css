@@ -425,6 +425,7 @@ p {
     /* Top nav bar links */
     .side-menu a {
       font-size: 12px; /* adjust as needed */
+      padding: 0 3px;
     }
 
     /* Info button text */
