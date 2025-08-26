@@ -257,8 +257,8 @@ p {
 
 .side-menu {
     position: fixed;
-    top: 170px; /* adjust as needed */
-    left: 30px;
+    top: 160px; /* adjust as needed */
+    left: 40px;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -269,7 +269,7 @@ p {
     text-decoration: none;
     color: #2E327F;
     font-family: 'Helvetica', monospace;
-    font-size: clamp(15px, 2vw, 24px);
+    font-size: clamp(15px, 2vw, 23px);
   }
   
   .side-menu a:hover {
@@ -340,7 +340,7 @@ p {
 
 
   .profile-pic {
-    max-width: 800px;
+    max-width: 450px;
     margin-top: 150px;
   }
 
