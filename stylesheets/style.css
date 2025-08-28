@@ -35,7 +35,7 @@ h1 {
 
 p {
     font-family: 'Helvetica', monospace;
-    font-size: 23px;
+    font-size: 20px;
     font-weight: medium;
     color: black;
 }
@@ -45,7 +45,7 @@ p {
         position: fixed;   /* Or use absolute if it's inside a relatively positioned container */
         top: 30px;         /* Adjust as needed */
         left: 30px;        /* Adjust as needed */
-        font-size: clamp(35px, 5vw, 50px);;   /* Customize font size */
+        font-size: clamp(35px, 5vw, 45px);;   /* Customize font size */
         font-weight: bold;
         font-family: 'HoboRegular', monospace; /* Or your preferred font */
         color: #2E327F;      /* Customize color */
@@ -58,7 +58,7 @@ p {
         position: fixed;   /* Or use absolute if it's inside a relatively positioned container */
         top: 30px;         /* Adjust as needed */
         left: 30px;        /* Adjust as needed */
-        font-size: clamp(35px, 5vw, 50px);   /* Customize font size */
+        font-size: clamp(35px, 5vw, 45px);   /* Customize font size */
         font-family: 'HoboRegular', monospace; /* Or your preferred font */
         margin: 0; 
 
@@ -341,7 +341,7 @@ p {
 
 
   .profile-pic {
-    max-width: 450px;
+    max-width: 350px;
     margin-top: 150px;
   }
 
