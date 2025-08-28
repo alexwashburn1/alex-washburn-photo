@@ -253,7 +253,7 @@ p {
     padding-left: 0px;
     box-sizing: border-box;
     position: relative;
-    margin-top: 60px; /* keeps it aligned with side menu text */
+    margin-top: 70px; /* keeps it aligned with side menu text */
 }
 
 .side-menu {
