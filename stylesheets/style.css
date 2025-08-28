@@ -360,6 +360,12 @@ p {
   /* MAKE THE WEBSITE MOBILE-FRIENDLY, these styles will apply to mobile devices */
   @media (max-width: 768px) {
 
+    /* change logo size for mobile displays */
+    .logo {
+      margin-top: 0px;     /* smaller top margin */
+      max-width: 375px;    /* scale down for mobile */
+    }
+
     /* display the slider images for mobile instead of desktop */
     #slider-desktop {
       display: none;
@@ -402,7 +408,7 @@ p {
     /* Keep name centered */
     #home-name {
       position: absolute;
-      top: 30px;
+      top: 20px;
       left: 50%;
       transform: translateX(-50%);
       font-size: 28px;
