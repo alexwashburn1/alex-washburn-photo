@@ -363,7 +363,7 @@ p {
     /* change logo size for mobile displays */
     .logo {
       margin-top: 0px;     /* smaller top margin */
-      max-width: 375px;    /* scale down for mobile */
+      max-width: 325px;    /* scale down for mobile */
     }
 
     /* display the slider images for mobile instead of desktop */
