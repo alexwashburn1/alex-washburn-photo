@@ -246,13 +246,14 @@ p {
 
 /* add a wrapper for the home page content */
 .home-content-wrapper {
-  display: flex;
-  justify-content: center;  /* horizontal center */
-  align-items: center;      /* vertical center */
-  height: 100vh;            /* full viewport height */
-  padding-left: 0px;      /* leave space for fixed side menu (adjust as needed) */
-  box-sizing: border-box;
-  position: relative;
+    display: flex;
+    justify-content: center;   /* horizontal center */
+    align-items: flex-start;   /* align to top */
+    height: auto;
+    padding-left: 0px;
+    box-sizing: border-box;
+    position: relative;
+    margin-top: 60px; /* keeps it aligned with side menu text */
 }
 
 .side-menu {
@@ -353,6 +354,7 @@ p {
 
     .home-content-wrapper {
       padding-top: 10px;
+      margin-top: 0px;
       align-items: flex-start;  /* this makes sure that in mobile view, sliders aren't too far down */
     }
 
@@ -401,9 +403,6 @@ p {
 
     .slider {
       margin-top: 15px;
-      max-width: 90%;   
-      margin-left: auto;
-      margin-right: auto;
     }
    
     .slide {
