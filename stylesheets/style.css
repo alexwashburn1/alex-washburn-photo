@@ -40,6 +40,13 @@ p {
     color: black;
 }
 
+.logo {
+  margin-top: 25px;
+  max-width: 650px;   
+  height: auto;
+  display: block;
+}
+
 .my-name-title {
         white-space: nowrap;
         position: fixed;   /* Or use absolute if it's inside a relatively positioned container */
@@ -357,7 +364,7 @@ p {
     #slider-desktop {
       display: none;
     }
-    
+
     #slider-mobile {
       display: block;
     }
