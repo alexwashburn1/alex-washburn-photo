@@ -102,6 +102,10 @@ p {
   z-index: 1000;
 }
 
+/* by default, display slider images for desktop */
+#slider-mobile {
+  display: none;
+}
 
 .header-link {
     font-size: clamp(15px, 2vw, 24px);
@@ -348,6 +352,16 @@ p {
 
   /* MAKE THE WEBSITE MOBILE-FRIENDLY, these styles will apply to mobile devices */
   @media (max-width: 768px) {
+
+    /* display the slider images for mobile instead of desktop */
+    #slider-desktop {
+      display: none;
+    }
+    
+    #slider-mobile {
+      display: block;
+    }
+
     .image-grid-surfing {
       grid-template-columns: 1fr;
     }
